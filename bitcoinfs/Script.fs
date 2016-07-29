@@ -138,8 +138,8 @@ have incompatibilities.
 *)
 let ECDSACheck (txHash: byte[], pub: byte[], signature: byte[]) = 
     if signature.Length > 0 && pub.Length > 0 then // 0 length signature or pub keys crash the library
-        let result = Signatures.Verify(txHash, signature, pub)
-        result = Signatures.VerifyResult.Verified
+        let result = Proxy.Verify.Invoke(txHash, signature, pub, false)
+        result
     else false
     (* // The Bouncy Castle way
     let signer = new ECDsaSigner()

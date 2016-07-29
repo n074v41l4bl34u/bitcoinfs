@@ -6,6 +6,7 @@ nuget ExtCore 0.8.45 framework: >= net45
 nuget FSharp.Data 2.1.0 framework: >= net45
 nuget FSharp.Data.SqlClient 1.5.5 framework: >= net45
 nuget FSharpx.Core 1.8.41 framework: >= net45
+nuget FSharp.Data.TypeProviders framework: >= net45
 nuget FSharpx.TypeProviders.AppSettings 1.8.41 framework: >= net45
 nuget FsPickler 1.0.11 framework: >= net45
 nuget FsUnit 1.3.0.1 framework: >= net45
@@ -28,10 +29,9 @@ github hhanh00/leveldb-win-binaries Release/leveldb.dll
 
 github hhanh00/leveldb-sharp
 
-github joshlang/Secp256k1.NET
+github n074v41l4bl34u/Secp256k1.NET
 
-github bitcoin/bitcoin src/test/data/script_valid.json
-github bitcoin/bitcoin src/test/data/script_invalid.json
+github bitcoin/bitcoin src/test/data/script_tests.json
 github bitcoin/bitcoin src/test/data/sighash.json
 github bitcoin/bitcoin src/test/data/tx_valid.json
 github bitcoin/bitcoin src/test/data/tx_invalid.json
